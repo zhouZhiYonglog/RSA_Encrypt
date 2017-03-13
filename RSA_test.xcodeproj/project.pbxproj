@@ -13,6 +13,10 @@
 		21DD2F321E76491F008B049A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DD2F301E76491F008B049A /* Main.storyboard */; };
 		21DD2F341E764920008B049A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DD2F331E764920008B049A /* Assets.xcassets */; };
 		21DD2F371E764920008B049A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DD2F351E764920008B049A /* LaunchScreen.storyboard */; };
+		21DD2F401E76492E008B049A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DD2F3F1E76492E008B049A /* Security.framework */; };
+		21DD2F431E76493F008B049A /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD2F421E76493F008B049A /* RSAEncryptor.m */; };
+		21DD2F461E764AFC008B049A /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 21DD2F441E764AFC008B049A /* private_key.p12 */; };
+		21DD2F471E764AFC008B049A /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 21DD2F451E764AFC008B049A /* public_key.der */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		21DD2F331E764920008B049A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DD2F361E764920008B049A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DD2F381E764920008B049A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DD2F3F1E76492E008B049A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		21DD2F411E76493F008B049A /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		21DD2F421E76493F008B049A /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		21DD2F441E764AFC008B049A /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		21DD2F451E764AFC008B049A /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DD2F401E76492E008B049A /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,7 @@
 			children = (
 				21DD2F261E76491F008B049A /* RSA_test */,
 				21DD2F251E76491F008B049A /* Products */,
+				21DD2F3E1E76492E008B049A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +73,10 @@
 				21DD2F2B1E76491F008B049A /* AppDelegate.m */,
 				21DD2F2D1E76491F008B049A /* ViewController.h */,
 				21DD2F2E1E76491F008B049A /* ViewController.m */,
+				21DD2F411E76493F008B049A /* RSAEncryptor.h */,
+				21DD2F421E76493F008B049A /* RSAEncryptor.m */,
+				21DD2F441E764AFC008B049A /* private_key.p12 */,
+				21DD2F451E764AFC008B049A /* public_key.der */,
 				21DD2F301E76491F008B049A /* Main.storyboard */,
 				21DD2F331E764920008B049A /* Assets.xcassets */,
 				21DD2F351E764920008B049A /* LaunchScreen.storyboard */,
@@ -77,6 +92,14 @@
 				21DD2F281E76491F008B049A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21DD2F3E1E76492E008B049A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21DD2F3F1E76492E008B049A /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +164,8 @@
 				21DD2F371E764920008B049A /* LaunchScreen.storyboard in Resources */,
 				21DD2F341E764920008B049A /* Assets.xcassets in Resources */,
 				21DD2F321E76491F008B049A /* Main.storyboard in Resources */,
+				21DD2F461E764AFC008B049A /* private_key.p12 in Resources */,
+				21DD2F471E764AFC008B049A /* public_key.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21DD2F2F1E76491F008B049A /* ViewController.m in Sources */,
+				21DD2F431E76493F008B049A /* RSAEncryptor.m in Sources */,
 				21DD2F2C1E76491F008B049A /* AppDelegate.m in Sources */,
 				21DD2F291E76491F008B049A /* main.m in Sources */,
 			);
