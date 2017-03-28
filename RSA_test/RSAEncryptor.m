@@ -22,7 +22,7 @@ static NSData *base64_decode(NSString *str){
     return data;
 }
 
-#pragma mark - 使用'.der'公钥文件加密字典（zhouzhiyong 新增）
+#pragma mark - 使用'.der'公钥文件加密字典
 
 + (NSString *)encryptDictionary:(NSDictionary *)dictionary publicKeyWithContentsOfFile:(NSString *)path{
     NSData *jsonData = [NSJSONSerialization  dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:nil];

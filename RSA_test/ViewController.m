@@ -33,9 +33,8 @@
     
     //字典加密
     NSMutableDictionary * allParams = [NSMutableDictionary dictionary];
-    [allParams setObject:@"useridididdiid" forKey:@"userid"];
-    [allParams setObject:@"tokentoken" forKey:@"token"];
-    [allParams setObject:@"versionversion" forKey:@"version"];
+    [allParams setObject:@"18638111122" forKey:@"telphoneNum"];
+    [allParams setObject:@"123123" forKey:@"password"];
     
     NSString *public_key_path = [[NSBundle mainBundle] pathForResource:@"public_key.der" ofType:nil];
     NSString *private_key_path = [[NSBundle mainBundle] pathForResource:@"private_key.p12" ofType:nil];
